@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><title>CasaWe</title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="Contact us.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>Website:</span> <a href="#">yoursite.com</a>
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-wrap">
+                <form action="#" method="POST">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">CasaWe</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="home.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+           <a href="Services.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Services</span>
+           </a>
+           <span class="tooltip">Services</span>
+         </li>
+         <li>
+           <a href="chat.html">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Chat</span>
+           </a>
+           <span class="tooltip">Chat</span>
+         </li>
+         <li>
+           <a href="Story.html">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">stories</span>
+           </a>
+           <span class="tooltip">Stories</span>
+         </li>
+         <li>
+           <a href="Contact us.html">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Contact us</span>
+           </a>
+           <span class="tooltip">Contact us</span>
+         </li>
+        
+         <li class="profile">
+             <div class="profile-details">
+    <img src="20221009_154931.png" alt="">           <div class="name_job">
+                 <div class="name">Prem Shahi</div>
+                 <div class="job">Web designer</div>
+               </div>
+             </div>
+             <i class='bx bx-log-out' id="log_out" ></i>
+         </li>
+        </ul>
+      </div>
+      
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+    
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+       }
+      }
+      </script>
+</body>
+</html>

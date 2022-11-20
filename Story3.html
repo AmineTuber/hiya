@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CasaWe</title>        <link rel="stylesheet" href="Story2.css" />
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo-details">
+              <i class='bx bxl-c-plus-plus icon'></i>
+                <div class="logo_name">CasaWe</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+            <ul class="nav-list">
+              <li>
+                  <i class='bx bx-search' ></i>
+                 <input type="text" placeholder="Search...">
+                 <span class="tooltip">Search</span>
+              </li>
+              <li>
+                <a href="home.html">
+                  <i class='bx bx-grid-alt'></i>
+                  <span class="links_name">Home</span>
+                </a>
+                 <span class="tooltip">Home</span>
+              </li>
+              <li>
+               <a href="Services.html">
+                 <i class='bx bx-user' ></i>
+                 <span class="links_name">Services</span>
+               </a>
+               <span class="tooltip">Services</span>
+             </li>
+             <li>
+               <a href="chat.html">
+                 <i class='bx bx-chat' ></i>
+                 <span class="links_name">Chat</span>
+               </a>
+               <span class="tooltip">Chat</span>
+             </li>
+             <li>
+               <a href="Story.html">
+                 <i class='bx bx-pie-chart-alt-2' ></i>
+                 <span class="links_name">stories</span>
+               </a>
+               <span class="tooltip">Stories</span>
+             </li>
+             <li>
+               <a href="Contact us.html">
+                 <i class='bx bx-folder' ></i>
+                 <span class="links_name">Contact us</span>
+               </a>
+               <span class="tooltip">Contact us</span>
+             </li>
+             
+             
+             <li class="profile">
+                 <div class="profile-details">
+        <img src="20221009_154931.png" alt="">           <div class="name_job">
+                     <div class="name">Prem Shahi</div>
+                     <div class="job">Web designer</div>
+                   </div>
+                 </div>
+                 <i class='bx bx-log-out' id="log_out" ></i>
+             </li>
+            </ul>
+          </div>
+        <audio src="assets/song.mp3"></audio>
+        <img src="assets/logo.png" alt="instagram" class="logo" />
+        <div class="card">
+            <div class="progress_bar_wrap">
+                <div class="progress_bar"></div>
+            </div>
+            <div class="card_controls">
+                <div class="profile">
+                    <img src="20221009_154931.png" alt="" class="profile_img" />
+                    <span class="yours">Your Story</span>
+                    <span class="time">2h</span>
+                </div>
+                <div class="controls">
+                    <svg
+                        aria-label="Pause"
+                        color="#ffffff"
+                        fill="#ffffff"
+                        height="16"
+                        role="img"
+                        viewBox="0 0 48 48"
+                        width="16"
+                        class="pause"
+                        style="display: none"
+                    >
+                        <path
+                            d="M15 1c-3.3 0-6 1.3-6 3v40c0 1.7 2.7 3 6 3s6-1.3 6-3V4c0-1.7-2.7-3-6-3zm18 0c-3.3 0-6 1.3-6 3v40c0 1.7 2.7 3 6 3s6-1.3 6-3V4c0-1.7-2.7-3-6-3z"
+                        ></path>
+                    </svg>
+                    <svg
+                        aria-label="Play"
+                        class="play"
+                        color="#ffffff"
+                        fill="#ffffff"
+                        height="16"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        width="16"
+                    >
+                        <path
+                            d="M5.888 22.5a3.46 3.46 0 01-1.721-.46l-.003-.002a3.451 3.451 0 01-1.72-2.982V4.943a3.445 3.445 0 015.163-2.987l12.226 7.059a3.444 3.444 0 01-.001 5.967l-12.22 7.056a3.462 3.462 0 01-1.724.462z"
+                        ></path>
+                    </svg>
+                    <svg
+                        aria-label="Audio is playing"
+                        class="mute"
+                        color="#ffffff"
+                        fill="#ffffff"
+                        height="16"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        width="16"
+                    >
+                        <path
+                            d="M16.636 7.028a1.5 1.5 0 10-2.395 1.807 5.365 5.365 0 011.103 3.17 5.378 5.378 0 01-1.105 3.176 1.5 1.5 0 102.395 1.806 8.396 8.396 0 001.71-4.981 8.39 8.39 0 00-1.708-4.978zm3.73-2.332A1.5 1.5 0 1018.04 6.59 8.823 8.823 0 0120 12.007a8.798 8.798 0 01-1.96 5.415 1.5 1.5 0 002.326 1.894 11.672 11.672 0 002.635-7.31 11.682 11.682 0 00-2.635-7.31zm-8.963-3.613a1.001 1.001 0 00-1.082.187L5.265 6H2a1 1 0 00-1 1v10.003a1 1 0 001 1h3.265l5.01 4.682.02.021a1 1 0 001.704-.814L12.005 2a1 1 0 00-.602-.917z"
+                        ></path>
+                    </svg>
+                    <svg
+                        aria-label="Audo is muted."
+                        class="unmute"
+                        color="#ffffff"
+                        fill="#ffffff"
+                        height="16"
+                        role="img"
+                        viewBox="0 0 48 48"
+                        width="16"
+                        style="display: none"
+                    >
+                        <path
+                            clip-rule="evenodd"
+                            d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4l-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z"
+                            fill-rule="evenodd"
+                        ></path>
+                    </svg>
+                    <svg
+                        aria-label="Menu"
+                        color="#ffffff"
+                        fill="#ffffff"
+                        height="24"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        width="24"
+                    >
+                        <path
+                            d="M12 9.75A2.25 2.25 0 1014.25 12 2.25 2.25 0 0012 9.75zm-6 0A2.25 2.25 0 108.25 12 2.25 2.25 0 006 9.75zm12 0A2.25 2.25 0 1020.25 12 2.25 2.25 0 0018 9.75z"
+                            fill-rule="evenodd"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+            
+        </div>
+          <a href="Story.html">  <img src="images-removebg-preview.png" alt="" class="fle">
+          </a>
+        <script >const song = {
+            name: 'Long Night pt.||',
+            src: 'assets/song.mp3',
+            cover: 'assets/song.jpg',
+            artist: 'JPB',
+            lyrics:
+                '2.8 | We gon turn the crib into a club like\n' +
+                "5.7 | Hennessy and Buddah screamin' thug life'\n" +
+                " 8 | Get it baby, you know I'm the plug, right'\n" +
+                " 10 | Buggin' got a feelin' that it's gonna be a long night'\n" +
+                " 11 | Whoa'\n" +
+                " 13 | Everything I touch turned gold'\n" +
+                " 15 | Need no introduction, 'cause they know briggin more''\n" +
+                " 17.3 | I hit the lotto, my motto roll up Gelato and Throttle'\n" +
+                " 20 | A couple models to caudal who fuckin' brought out the bottles'\n" +
+                " 22 | I'm goin' ham'\n" +
+                " 23 | This ain't even luck, all planned'\n" +
+                " 25 | Y'all know who the fucks I am'\n" +
+                " 27 | Burnin' bucks mo bands'\n" +
+                " 29 | Always been the M.O. since the start of this'\n" +
+                " 30.5 | And now I'm on a mission like I'm Optimus, aye'\n" +
+                "  33.5| We gon turn the crib into a club like'\n" +
+                "  36 | Hennessy and Buddah screamin' thug life'\n" +
+                "  39 | Get it baby, you know I'm the plug, right'\n" +
+                "  40 | Buggin' got a feelin' that it's gonna be a long night'\n" +
+                "  51 | Got a feelin' that it's gonna be a long night'\n" +
+                "  62 | Yеah, never an averagе night'\n" +
+                "  64 | Two, four hours up in a day I gotta make it right'\n" +
+                "  67 | 18 of those I'm in a cave I gotta make some light'\n" +
+                "  69 | Make it hype, even if we breakin' night'\n" +
+                "72 | And even if things go left we gotta make 'em right'\n" +
+                "74 |  Chillin' with M.I.M.E we triple up aye 'onna double UP'\n" +
+                "76.4 | Triple dub, came from the basement we only goin' up'\n" +
+                "79 | They lovin' us, up in the booth I'm getting dizzy,'\n" +
+                "80  | but aye, the cup is up'\n" +
+                "82  | Toast to my people, that's on the come up, aye'\n" +
+                "84  | You lit with us, in order by the trigger buzz'\n" +
+                "86  | Lookin' at my watches a spirit bomb both hands are goin' up'\n" +
+                "88.5  | You comin' coast to coast with us'\n" +
+                "90  | See the flows are flowin' over, flowin' yeah'\n" +
+                "92  | The cup it run it over title wave up in the ocean,ah'\n" +
+                "95  | We gon turn the crib into a club like'\n" +
+                "97  | Hennessy and Buddah screamin' thug life'\n" +
+                "100  | Get it baby, you know I'm the plug, right'\n" +
+                "102  | Buggin' got a feelin' that it's gonna be a long night'\n" +
+                "112  | Got a feelin' that it's gonna be a long night'\n",
+        };
+        var audioPlayer = document.getElementsByTagName('audio')[0];
+        var play = document.querySelector('.play');
+        var pause = document.querySelector('.pause');
+        var mute = document.querySelector('.mute');
+        var unmute = document.querySelector('.unmute');
+        var progress_bar = document.querySelector('.progress_bar');
+        var lyrics = document.querySelector('.lyrics');
+        var cover = document.querySelector('.cover');
+        var song_wrapper = document.querySelector('.song_wrapper');
+        
+        play.addEventListener('click', function () {
+            audioPlayer.play();
+            this.style.display = 'none';
+            pause.style.display = 'block';
+        });
+        pause.addEventListener('click', function () {
+            audioPlayer.pause();
+            this.style.display = 'none';
+            play.style.display = 'block';
+        });
+        mute.addEventListener('click', function () {
+            audioPlayer.volume = 0;
+            this.style.display = 'none';
+            unmute.style.display = 'block';
+        });
+        unmute.addEventListener('click', function () {
+            audioPlayer.volume = 1;
+            this.style.display = 'none';
+            mute.style.display = 'block';
+        });
+        
+        var size = 420;
+        setInterval(function () {
+            var width = parseInt(
+                (audioPlayer.currentTime * size) / audioPlayer.duration
+            );
+            progress_bar.style.width = width + 'px';
+        }, 100);
+        
+        const lines = song.lyrics.trim().split('\n');
+        
+        const data = [];
+        
+        lines.map(function (line) {
+            const [time, lyric] = line.split('|');
+            data.push({
+                time: time,
+                lyric: lyric,
+            });
+        });
+        
+        audioPlayer.addEventListener('timeupdate', function () {
+            data.forEach((item) => {
+                if (audioPlayer.currentTime >= item.time) {
+                    lyrics.innerText = item.lyric;
+                }
+            });
+        });
+        var type = 'cover';
+        song_wrapper.addEventListener('click', function () {
+            if (type == 'cover') {
+                cover.style.display = 'none';
+                lyrics.style.display = 'block';
+                type = 'lyrics';
+            } else {
+                lyrics.style.display = 'none';
+                cover.style.display = 'flex';
+                type = 'cover';
+            }
+        });
+        
+        </script>
+         <script>
+            let sidebar = document.querySelector(".sidebar");
+            let closeBtn = document.querySelector("#btn");
+            let searchBtn = document.querySelector(".bx-search");
+          
+            closeBtn.addEventListener("click", ()=>{
+              sidebar.classList.toggle("open");
+              menuBtnChange();//calling the function(optional)
+            });
+          
+            searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+              sidebar.classList.toggle("open");
+              menuBtnChange(); //calling the function(optional)
+            });
+          
+            // following are the code to change sidebar button(optional)
+            function menuBtnChange() {
+             if(sidebar.classList.contains("open")){
+               closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+             }else {
+               closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+             }
+            }
+            </script>
+    </body>
+</html>
